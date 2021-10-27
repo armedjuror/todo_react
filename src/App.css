@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333D79FF;
+    color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-wrapper{
+    margin: 5% auto;
+    width: 400px;
+    display: block;
+}
+.heading-wrapper{
+    text-align: center;
+}
+.heading-wrapper h3{
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-box{
+    background: #cecece;
+    color: #333D79FF;
+    border-radius: 10px;
+    margin: 10px 0;
+    color: #777787;
+    display: flex;
+}
+.todo-textbox{
+    height: 40px;
+    cursor: pointer;
+}
+.todo-text{
+    padding: 10px;
+    font-size: 15px;
+    color: #777787;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-input-wrapper{
+    width: 90%;
+    text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-input{
+    border: none;
+    background: none;
+    color: #777787;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.todo-input:focus{
+    outline: none;
+}
+
+.todo-addBtn-wrapper{
+    width: 10%;
+}
+
+.todo-addBtn{
+    width: 100%;
+    height: 40px;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.15s ease;
+    color: #777;
+}
+
+.todo-addBtn:hover{
+    background: #777;
+    color: #cecece;
+}
+
+.todo-trashBtn{
+    width: 100%;
+    height: 40px;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.25s ease;
+    color: #777;
+}
+.todo-trashBtn:hover{
+    color: #cecece;
+    background: rgb(163, 85, 85);
+}
+
+
+.strikethrough{
+    text-decoration: line-through;
 }
